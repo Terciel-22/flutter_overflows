@@ -2,87 +2,87 @@
 
 1. Text Overflow
 
-   - Scenario: A Text widget contains a long string of text that exceeds the available width.
-   - Solutions:
-     - Wrap the Text widget with a `Flexible` or `Expanded` widget to allow the text to occupy the available space without overflowing.
-     - Use the `overflow` property of the Text widget to control how the overflowed text is displayed, such as using an ellipsis or fading out.
+- Scenario: A Text widget contains a long string of text that exceeds the available width.
+- Solutions:
+  - Wrap the Text widget with a `Flexible` or `Expanded` widget to allow the text to occupy the available space without overflowing.
+  - Use the `overflow` property of the Text widget to control how the overflowed text is displayed, such as using an ellipsis or fading out.
 
 2. Container Overflow
 
-   - Scenario: The child widgets within a Container exceed its size, causing it to overflow.
-   - Solutions:
-     - Adjust the size of the Container or its child widgets to fit within the available space.
-     - Utilize widgets like `ListView`, `GridView`, or `Wrap` to handle the overflowed content by providing scrolling or wrapping functionality.
+- Scenario: The child widgets within a Container exceed its size, causing it to overflow.
+- Solutions:
+  - Adjust the size of the Container or its child widgets to fit within the available space.
+  - Utilize widgets like `ListView`, `GridView`, or `Wrap` to handle the overflowed content by providing scrolling or wrapping functionality.
 
 3. Column/Row Overflow
 
-   - Scenario: The combined width or height of children within a Column or Row exceeds the available space.
-   - Solutions:
-     - Wrap the Column or Row with a `SingleChildScrollView` to enable scrolling.
-     - Use `ListView`, `GridView`, or `Wrap` widgets to handle the overflow by providing scrolling or wrapping functionality.
+- Scenario: The combined width or height of children within a Column or Row exceeds the available space.
+- Solutions:
+  - Wrap the Column or Row with a `SingleChildScrollView` to enable scrolling.
+  - Use `ListView`, `GridView`, or `Wrap` widgets to handle the overflow by providing scrolling or wrapping functionality.
 
 4. Stack Overflow
 
-   - Scenario: The content within a Stack widget exceeds the available space.
-   - Solutions:
-     - Use `Positioned` widgets within the Stack to position the children correctly.
-     - Wrap the Stack with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
+- Scenario: The content within a Stack widget exceeds the available space.
+- Solutions:
+  - Use `Positioned` widgets within the Stack to position the children correctly.
+  - Wrap the Stack with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
 
 5. Container Constraints
 
-   - Scenario: The overflow issue occurs due to constraints set on the parent widget.
-   - Solutions:
-     - Adjust the constraints on the parent widget, such as removing fixed heights or widths, to allow the child widget to occupy the available space.
-     - Utilize widgets like `Flexible` or `Expanded` to provide dynamic sizing based on available space.
+- Scenario: The overflow issue occurs due to constraints set on the parent widget.
+- Solutions:
+  - Adjust the constraints on the parent widget, such as removing fixed heights or widths, to allow the child widget to occupy the available space.
+  - Utilize widgets like `Flexible` or `Expanded` to provide dynamic sizing based on available space.
 
 6. Image Overflow
 
-   - Scenario: An Image widget has a size larger than the available space.
-   - Solutions:
-     - Use properties like `fit` and `alignment` to control how the image is displayed within the widget.
-     - Wrap the Image with widgets like `ClipRect`, `ClipRRect`, or `FractionallySizedBox` to control the image's dimensions.
+- Scenario: An Image widget has a size larger than the available space.
+- Solutions:
+  - Use properties like `fit` and `alignment` to control how the image is displayed within the widget.
+  - Wrap the Image with widgets like `ClipRect`, `ClipRRect`, or `FractionallySizedBox` to control the image's dimensions.
 
 7. Table Overflow
 
-   - Scenario: The content within a Table widget exceeds the available space.
-   - Solutions:
-     - Utilize the `Table` widget's properties like `columnWidths` or `defaultColumnWidth` to adjust column sizes.
-     - Wrap the Table with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
+- Scenario: The content within a Table widget exceeds the available space.
+- Solutions:
+  - Utilize the `Table` widget's properties like `columnWidths` or `defaultColumnWidth` to adjust column sizes.
+  - Wrap the Table with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
 
 8. TextField Overflow
 
-   - Scenario: The text entered in a TextField widget exceeds the available width.
-   - Solutions:
-     - Set the `maxLines` property of the TextField to a higher value or set it to `null` to allow the text to wrap to multiple lines.
-     - Wrap the TextField with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
+- Scenario: The text entered in a TextField widget exceeds the available width.
+- Solutions:
+  - Set the `maxLines` property of the TextField to a higher value or set it to `null` to allow the text to wrap to multiple lines.
+  - Wrap the TextField with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
 
 9. ExpansionTile Overflow
 
-   - Scenario: The content within an ExpansionTile widget exceeds the available space when expanded.
-   - Solutions:
-     - Wrap the content of the ExpansionTile with a `SingleChildScrollView` or other scrolling widgets to enable scrolling when expanded.
-     - Consider using a `ListView` or `Column` with scrolling capabilities as the content of the ExpansionTile.
+- Scenario: The content within an ExpansionTile widget exceeds the available space when expanded.
+- Solutions:
+  - Wrap the content of the ExpansionTile with a `SingleChildScrollView` or other scrolling widgets to enable scrolling when expanded.
+  - Consider using a `ListView` or `Column` with scrolling capabilities as the content of the ExpansionTile.
 
 10. Container Padding/Margin Overflow
 
-    - Scenario: The padding or margin set on a Container widget causes its child widget to overflow.
-    - Solutions:
-      - Adjust the padding or margin values to ensure that the child widget remains within the available space.
-      - Use constraints like `BoxConstraints` or size-related properties to control the size of the child widget within the Container.
+- Scenario: The padding or margin set on a Container widget causes its child widget to overflow.
+- Solutions:
+  - Adjust the padding or margin values to ensure that the child widget remains within the available space.
+  - Use constraints like `BoxConstraints` or size-related properties to control the size of the child widget within the Container.
 
 11. TabBarView Overflow
 
-    - Scenario: The content within a TabBarView widget exceeds the available space.
-    - Solutions:
-      - Wrap the content of the TabBarView with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
-      - Utilize widgets like `ListView`, `GridView`, or `Wrap` to handle the overflowed content by providing scrolling or wrapping functionality.
+- Scenario: The content within a TabBarView widget exceeds the available space.
+- Solutions:
+  - Wrap the content of the TabBarView with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
+  - Utilize widgets like `ListView`, `GridView`, or `Wrap` to handle the overflowed content by providing scrolling or wrapping functionality.
 
 12. Wrap Overflow
 
-    - Scenario: The child widgets within a Wrap widget exceed the available width or height.
-    - Solutions:
-      - Set the `spacing` and `runSpacing` properties of the Wrap widget to control the spacing between children and prevent overflow.
-      - Wrap the Wrap widget with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
+- Scenario: The child widgets within a Wrap widget exceed the available width or height.
+- Solutions:
+  - Set the `spacing` and `runSpacing` properties of the Wrap widget to control the spacing between children and prevent overflow.
+  - Wrap the Wrap widget with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
 
 13. GridView Overflow
 
