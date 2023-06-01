@@ -120,8 +120,6 @@ s- Scenario: The combined width or height of children within a Column or Row exc
   - Analyze the widget hierarchy and adjust the constraints, sizes, or scrolling capabilities of the parent and child widgets.
   - Consider using widgets like `Flexible`, `Expanded`, `ListView`, or `SingleChildScrollView` at appropriate levels to handle the overflow.
 
-Certainly! Here are a few more scenarios where overflowed widgets can occur in Flutter, along with their corresponding solutions:
-
 18. TabBar Overflow
 
 - Scenario: The tabs within a TabBar widget exceed the available space.
@@ -157,8 +155,6 @@ Certainly! Here are a few more scenarios where overflowed widgets can occur in F
   - Wrap the content of the Drawer with a `SingleChildScrollView` or other scrolling widgets to enable scrolling within the drawer.
   - Adjust the size of the content within the Drawer to fit within the available space.
 
-Certainly! Here are a few more scenarios where overflowed widgets can occur in Flutter, along with their corresponding solutions:
-
 23. Flexible Overflow
 
 - Scenario: The child widget within a Flexible widget exceeds the available space.
@@ -193,8 +189,6 @@ Certainly! Here are a few more scenarios where overflowed widgets can occur in F
 - Solutions:
   - Wrap the content of the TableCell with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
   - Adjust the size of the content within the TableCell to fit within the available space.
-
-Certainly! Here are a few more scenarios where overflowed widgets can occur in Flutter, along with their corresponding solutions:
 
 28. FlexibleSpaceBar Overflow
 

@@ -19,6 +19,18 @@ class _WContainerOverflow extends State<WContainerOverflow> {
       body: SafeArea(
         child: Container(
           color: Theme.of(context).highlightColor,
+          child: Center(
+            child: Container(
+              color: Colors.white,
+              width: 200,
+              height: 100,
+              child: Row(
+                children: [
+                  Container(width: 250, height: 20, color: Colors.blue),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );
