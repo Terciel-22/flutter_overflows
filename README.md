@@ -16,7 +16,8 @@
 
 3. Column/Row Overflow
 
-- Scenario: The combined width or height of children within a Column or Row exceeds the available space.
+s- Scenario: The combined width or height of children within a Column or Row exceeds the available space.
+
 - Solutions:
   - Wrap the Column or Row with a `SingleChildScrollView` to enable scrolling.
   - Use `ListView`, `GridView`, or `Wrap` widgets to handle the overflow by providing scrolling or wrapping functionality.
