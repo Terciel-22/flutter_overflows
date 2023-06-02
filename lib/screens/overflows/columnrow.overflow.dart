@@ -19,6 +19,32 @@ class _WColumRowOverflow extends State<WColumRowOverflow> {
       body: SafeArea(
         child: Container(
           color: Theme.of(context).highlightColor,
+          child: Center(
+            child: Container(
+              color: Colors.white,
+              width: 200,
+              height: 500,
+              child: Column(
+                children: [
+                  Container(
+                    color: Colors.red,
+                    width: 100,
+                    height: 200,
+                  ),
+                  Container(
+                    color: Colors.blue,
+                    width: 100,
+                    height: 200,
+                  ),
+                  Container(
+                    color: Colors.yellow,
+                    width: 100,
+                    height: 200,
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );

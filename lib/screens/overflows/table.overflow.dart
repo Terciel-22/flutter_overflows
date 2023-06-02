@@ -19,6 +19,33 @@ class _WTableOverflowState extends State<WTableOverflow> {
       body: SafeArea(
         child: Container(
           color: Theme.of(context).highlightColor,
+          child: Center(
+            child: Container(
+                color: Colors.white,
+                width: 300,
+                height: 300,
+                child: Table(
+                  children: [
+                    TableRow(children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.blue,
+                      ),
+                      Container(
+                        height: 100,
+                        width: 200,
+                        color: Colors.yellow,
+                      ),
+                    ])
+                  ],
+                )),
+          ),
         ),
       ),
     );

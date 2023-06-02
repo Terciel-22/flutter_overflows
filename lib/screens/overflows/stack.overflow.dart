@@ -19,6 +19,22 @@ class _WStackOverflowState extends State<WStackOverflow> {
       body: SafeArea(
         child: Container(
           color: Theme.of(context).highlightColor,
+          child: Center(
+            child: Container(
+              color: Colors.white,
+              width: 300,
+              height: 300,
+              child: Stack(
+                children: [
+                  Row(
+                    children: [
+                      Container(width: 500, height: 200, color: Colors.blue),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );

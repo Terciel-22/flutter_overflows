@@ -21,6 +21,18 @@ class _WContainerConstraintsOverflowState
       body: SafeArea(
         child: Container(
           color: Theme.of(context).highlightColor,
+          child: Center(
+            child: Container(
+              color: Colors.white,
+              width: 300,
+              height: 100,
+              child: Row(
+                children: [
+                  Container(width: 400, height: 20, color: Colors.blue),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );

@@ -55,7 +55,6 @@ s- Scenario: The combined width or height of children within a Column or Row exc
 - Scenario: The text entered in a TextField widget exceeds the available width.
 - Solutions:
   - Set the `maxLines` property of the TextField to a higher value or set it to `null` to allow the text to wrap to multiple lines.
-  - Wrap the TextField with a `SingleChildScrollView` or other scrolling widgets to enable scrolling.
 
 9. ExpansionTile Overflow
 

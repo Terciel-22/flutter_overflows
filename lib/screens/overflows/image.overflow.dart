@@ -19,6 +19,20 @@ class _WImageOverflowState extends State<WImageOverflow> {
       body: SafeArea(
         child: Container(
           color: Theme.of(context).highlightColor,
+          child: Center(
+            child: Container(
+              color: Colors.white,
+              width: 200,
+              height: 200,
+              child: Row(
+                children: [
+                  Image.network(
+                    "https://picsum.photos/300",
+                  )
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );
