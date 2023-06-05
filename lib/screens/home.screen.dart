@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_overflows/screens/others/animation.screen.dart';
 import 'package:flutter_overflows/screens/others/drawer.screen.dart';
 import 'package:flutter_overflows/screens/others/font.screen.dart';
+import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
 import 'package:flutter_overflows/screens/others/snackbar.screen.dart';
 import 'package:flutter_overflows/screens/overflows/columnrow.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/container.overflow.dart';
@@ -111,6 +113,22 @@ class _HomeScreenState extends State<HomeScreen> {
                 FontsScreen.name,
               ),
               onPressed: () => context.pushNamed(FontsScreen.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(
+                AnimationScreen.name,
+              ),
+              onPressed: () => context.pushNamed(AnimationScreen.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(
+                SkeletonScreen.name,
+              ),
+              onPressed: () => context.pushNamed(SkeletonScreen.routeName),
             ),
           ),
         ],

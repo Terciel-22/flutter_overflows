@@ -1,6 +1,8 @@
 import 'package:flutter_overflows/screens/home.screen.dart';
+import 'package:flutter_overflows/screens/others/animation.screen.dart';
 import 'package:flutter_overflows/screens/others/drawer.screen.dart';
 import 'package:flutter_overflows/screens/others/font.screen.dart';
+import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
 import 'package:flutter_overflows/screens/others/snackbar.screen.dart';
 import 'package:flutter_overflows/screens/overflows/columnrow.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/container.overflow.dart';
@@ -78,5 +80,15 @@ List<RouteBase> routeList = [
     path: FontsScreen.routeName,
     name: FontsScreen.routeName,
     builder: (context, state) => const FontsScreen(),
+  ),
+  GoRoute(
+    path: AnimationScreen.routeName,
+    name: AnimationScreen.routeName,
+    builder: (context, state) => const AnimationScreen(),
+  ),
+  GoRoute(
+    path: SkeletonScreen.routeName,
+    name: SkeletonScreen.routeName,
+    builder: (context, state) => const SkeletonScreen(),
   ),
 ];
