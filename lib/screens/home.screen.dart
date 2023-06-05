@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_overflows/screens/others/drawer.screen.dart';
+import 'package:flutter_overflows/screens/others/font.screen.dart';
+import 'package:flutter_overflows/screens/others/snackbar.screen.dart';
 import 'package:flutter_overflows/screens/overflows/columnrow.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/container.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/containerconstraints.overflow.dart';
@@ -7,6 +10,7 @@ import 'package:flutter_overflows/screens/overflows/stack.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/table.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/text.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/textfield.overflow.dart';
+import 'package:flutter_overflows/screens/others/periodictable.screen.dart';
 import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -73,6 +77,40 @@ class _HomeScreenState extends State<HomeScreen> {
             title: TextButton(
               child: Text(WTextFieldOverflow.name),
               onPressed: () => context.pushNamed(WTextFieldOverflow.routeName),
+            ),
+          ),
+          const ListTile(
+            title: Text(
+              "Other Screens",
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: const Text(PeriodicTableApp.name),
+              onPressed: () => context.pushNamed(PeriodicTableApp.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(DrawerScreen.name),
+              onPressed: () => context.pushNamed(DrawerScreen.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(
+                SnackbarScreen.name,
+              ),
+              onPressed: () => context.pushNamed(SnackbarScreen.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(
+                FontsScreen.name,
+              ),
+              onPressed: () => context.pushNamed(FontsScreen.routeName),
             ),
           ),
         ],

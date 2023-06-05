@@ -21,7 +21,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: _router,
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.red),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.red,
+      ),
     );
   }
 }
