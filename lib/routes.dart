@@ -1,5 +1,6 @@
 import 'package:flutter_overflows/screens/home.screen.dart';
 import 'package:flutter_overflows/screens/others/animation.screen.dart';
+import 'package:flutter_overflows/screens/others/dio.screen.dart';
 import 'package:flutter_overflows/screens/others/drawer.screen.dart';
 import 'package:flutter_overflows/screens/others/font.screen.dart';
 import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
@@ -90,5 +91,10 @@ List<RouteBase> routeList = [
     path: SkeletonScreen.routeName,
     name: SkeletonScreen.routeName,
     builder: (context, state) => const SkeletonScreen(),
+  ),
+  GoRoute(
+    path: DioScreen.routeName,
+    name: DioScreen.routeName,
+    builder: (context, state) => const DioScreen(),
   ),
 ];

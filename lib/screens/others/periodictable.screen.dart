@@ -7,8 +7,8 @@ import 'package:flutter_layout_grid/flutter_layout_grid.dart';
 
 class PeriodicTableApp extends StatelessWidget {
   const PeriodicTableApp({Key? key}) : super(key: key);
-  static const routeName = '/periodic-table';
-  static const name = 'Periodic Table';
+  static String routeName = '/periodic-table';
+  static String name = 'Periodic Table';
 
   @override
   Widget build(BuildContext context) {

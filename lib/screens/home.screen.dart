@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_overflows/screens/others/animation.screen.dart';
+import 'package:flutter_overflows/screens/others/dio.screen.dart';
 import 'package:flutter_overflows/screens/others/drawer.screen.dart';
 import 'package:flutter_overflows/screens/others/font.screen.dart';
 import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
@@ -89,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           ListTile(
             title: TextButton(
-              child: const Text(PeriodicTableApp.name),
+              child: Text(PeriodicTableApp.name),
               onPressed: () => context.pushNamed(PeriodicTableApp.routeName),
             ),
           ),
@@ -129,6 +130,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 SkeletonScreen.name,
               ),
               onPressed: () => context.pushNamed(SkeletonScreen.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(
+                DioScreen.name,
+              ),
+              onPressed: () => context.pushNamed(DioScreen.routeName),
             ),
           ),
         ],
