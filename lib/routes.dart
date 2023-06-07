@@ -3,6 +3,7 @@ import 'package:flutter_overflows/screens/others/animation.screen.dart';
 import 'package:flutter_overflows/screens/others/dio.screen.dart';
 import 'package:flutter_overflows/screens/others/drawer.screen.dart';
 import 'package:flutter_overflows/screens/others/font.screen.dart';
+import 'package:flutter_overflows/screens/others/showdialog.screen.dart';
 import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
 import 'package:flutter_overflows/screens/others/snackbar.screen.dart';
 import 'package:flutter_overflows/screens/overflows/columnrow.overflow.dart';
@@ -96,5 +97,10 @@ List<RouteBase> routeList = [
     path: DioScreen.routeName,
     name: DioScreen.routeName,
     builder: (context, state) => const DioScreen(),
+  ),
+  GoRoute(
+    path: ShowDialogScreen.routeName,
+    name: ShowDialogScreen.routeName,
+    builder: (context, state) => const ShowDialogScreen(),
   ),
 ];

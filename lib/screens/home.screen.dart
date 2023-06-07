@@ -3,6 +3,7 @@ import 'package:flutter_overflows/screens/others/animation.screen.dart';
 import 'package:flutter_overflows/screens/others/dio.screen.dart';
 import 'package:flutter_overflows/screens/others/drawer.screen.dart';
 import 'package:flutter_overflows/screens/others/font.screen.dart';
+import 'package:flutter_overflows/screens/others/showdialog.screen.dart';
 import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
 import 'package:flutter_overflows/screens/others/snackbar.screen.dart';
 import 'package:flutter_overflows/screens/overflows/columnrow.overflow.dart';
@@ -138,6 +139,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 DioScreen.name,
               ),
               onPressed: () => context.pushNamed(DioScreen.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(
+                ShowDialogScreen.name,
+              ),
+              onPressed: () => context.pushNamed(ShowDialogScreen.routeName),
             ),
           ),
         ],
