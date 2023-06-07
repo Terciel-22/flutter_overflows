@@ -6,6 +6,7 @@ import 'package:flutter_overflows/screens/others/font.screen.dart';
 import 'package:flutter_overflows/screens/others/showdialog.screen.dart';
 import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
 import 'package:flutter_overflows/screens/others/snackbar.screen.dart';
+import 'package:flutter_overflows/screens/others/textfields.screen.dart';
 import 'package:flutter_overflows/screens/overflows/columnrow.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/container.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/containerconstraints.overflow.dart';
@@ -147,6 +148,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 ShowDialogScreen.name,
               ),
               onPressed: () => context.pushNamed(ShowDialogScreen.routeName),
+            ),
+          ),
+          ListTile(
+            title: TextButton(
+              child: Text(
+                TextFieldsScreen.name,
+              ),
+              onPressed: () => context.pushNamed(TextFieldsScreen.routeName),
             ),
           ),
         ],

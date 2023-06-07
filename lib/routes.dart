@@ -6,6 +6,7 @@ import 'package:flutter_overflows/screens/others/font.screen.dart';
 import 'package:flutter_overflows/screens/others/showdialog.screen.dart';
 import 'package:flutter_overflows/screens/others/skeleton.screen.dart';
 import 'package:flutter_overflows/screens/others/snackbar.screen.dart';
+import 'package:flutter_overflows/screens/others/textfields.screen.dart';
 import 'package:flutter_overflows/screens/overflows/columnrow.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/container.overflow.dart';
 import 'package:flutter_overflows/screens/overflows/containerconstraints.overflow.dart';
@@ -102,5 +103,10 @@ List<RouteBase> routeList = [
     path: ShowDialogScreen.routeName,
     name: ShowDialogScreen.routeName,
     builder: (context, state) => const ShowDialogScreen(),
+  ),
+  GoRoute(
+    path: TextFieldsScreen.routeName,
+    name: TextFieldsScreen.routeName,
+    builder: (context, state) => const TextFieldsScreen(),
   ),
 ];
