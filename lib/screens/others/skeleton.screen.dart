@@ -29,42 +29,36 @@ class _SkeletonScreenState extends State<SkeletonScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Scrollable TextButtons',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Scrollable TextButtons'),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Scrollable TextButtons'),
-        ),
-        body: SizedBox(
-          height: kToolbarHeight,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            controller: _scrollController,
-            itemCount: buttonTexts.length,
-            itemExtent: 120.0, // Adjust as needed
-            itemBuilder: (context, index) {
-              final text = buttonTexts[index];
-              return Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextButton(
-                  onPressed: () {
-                    // Button press logic
-                    scrollToCenter(index);
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.blue),
-                  ),
-                  child: Text(
-                    text,
-                    style: const TextStyle(color: Colors.white),
-                  ),
+      body: SizedBox(
+        height: kToolbarHeight,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          controller: _scrollController,
+          itemCount: buttonTexts.length,
+          itemExtent: 120.0, // Adjust as needed
+          itemBuilder: (context, index) {
+            final text = buttonTexts[index];
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                onPressed: () {
+                  // Button press logic
+                  scrollToCenter(index);
+                },
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.blue),
                 ),
-              );
-            },
-          ),
+                child: Text(
+                  text,
+                  style: const TextStyle(color: Colors.white),
+                ),
+              ),
+            );
+          },
         ),
       ),
     );
