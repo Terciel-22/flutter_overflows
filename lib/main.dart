@@ -24,6 +24,11 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         useMaterial3: true,
         colorSchemeSeed: Colors.red,
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+        ),
       ),
     );
   }
