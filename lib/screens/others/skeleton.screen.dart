@@ -48,11 +48,10 @@ class _SkeletonScreenState extends State<SkeletonScreen> {
             itemBuilder: (context, index) {
               final text = buttonTexts[index];
               return Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: TextButton(
                   onPressed: () {
                     // Button press logic
-                    print('Pressed $text');
                     scrollToCenter(index);
                   },
                   style: ButtonStyle(
@@ -72,13 +71,13 @@ class _SkeletonScreenState extends State<SkeletonScreen> {
   }
 
   void scrollToCenter(int index) {
-    final double itemWidth = 120.0; // Adjust to match the itemExtent
+    const double itemWidth = 120.0; // Adjust to match the itemExtent
     final double screenWidth = MediaQuery.of(context).size.width;
     final double scrollOffset =
         (itemWidth * index) - (screenWidth / 2) + (itemWidth / 2);
     _scrollController.animateTo(
       scrollOffset,
-      duration: Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 500),
       curve: Curves.ease,
     );
   }
